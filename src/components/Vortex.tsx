@@ -31,12 +31,12 @@ export const Vortex = ({
     backgroundColor = "#000000",
 }: VortexProps) => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
-    const containerRef = useRef<HTMLDivElement>(null);
+
     const { theme } = useTheme();
 
     // Use theme to determine background color if not explicitly provided
     const bgColor = theme === 'light' ? '#ffffff' : backgroundColor;
-    const particleColor = theme === 'light' ? '#000000' : '#ffffff';
+
 
     const particlePropCount = 9;
     const particlePropsLength = particleCount * particlePropCount;
@@ -47,14 +47,13 @@ export const Vortex = ({
     const rangeRadiusRef = useRef(rangeRadius);
     const noise3D = createNoise3D();
     let tick = 0;
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const noiseSteps = 3;
+
     let particleProps = new Float32Array(particlePropsLength);
     let center: [number, number] = [0, 0];
 
-    const HALF_PI = Math.PI * 0.5;
+
     const TAU = Math.PI * 2;
-    const TO_RAD = Math.PI / 180;
+
     const rand = (n: number) => n * Math.random();
     const randRange = (n: number) => n - rand(2 * n);
     const fadeInOut = (t: number, m: number) => {
