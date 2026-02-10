@@ -34,7 +34,7 @@ const Hero = () => {
                     <div className="relative">
                         <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full blur-lg opacity-50"></div>
                         <img
-                            src="../../images/photo_Mikael.png"
+                            src="/images/photo_Mikael.png"
                             alt="Mikaël Vivier"
                             className="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-gray-800 shadow-2xl"
                         />

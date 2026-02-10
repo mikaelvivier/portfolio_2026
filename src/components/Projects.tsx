@@ -17,7 +17,7 @@ const Projects = () => {
         {
             title: t('projects.items.cicd.title'),
             description: t('projects.items.cicd.description'),
-            image: '../../images/dashboard_CICD.jpg',
+            image: '/images/dashboard_CICD.jpg',
             tags: ['GitLab CI', 'Docker', 'Ansible', 'Linux', 'Spring Boot', 'Angular'],
             githubUrl: 'https://github.com/mikaelvivier',
             demoUrl: 'https://demo.com',
@@ -25,7 +25,7 @@ const Projects = () => {
         {
             title: t('projects.items.social.title'),
             description: t('projects.items.social.description'),
-            image: '../../images/chti_face_bouc.png',
+            image: '/images/chti_face_bouc.png',
             tags: ['Flutter', 'Firebase', 'Dart', 'Mobile'],
             githubUrl: 'https://github.com/mikaelvivier',
             demoUrl: 'https://demo.com',
@@ -33,7 +33,7 @@ const Projects = () => {
         {
             title: t('projects.items.aws.title'),
             description: t('projects.items.aws.description'),
-            image: '../../images/aws.png',
+            image: '/images/aws.png',
             tags: ['AWS Lambda', 'API Gateway', 'DynamoDB', 'S3', 'React'],
             githubUrl: 'https://github.com/mikaelvivier',
             demoUrl: 'https://demo.com',
@@ -41,7 +41,7 @@ const Projects = () => {
         {
             title: t('projects.items.blockchain.title'),
             description: t('projects.items.blockchain.description'),
-            image: '../../images/electionchain.png',
+            image: '/images/electionchain.png',
             tags: ['Solidity', 'Ethereum', 'Web3.js', 'React', 'Truffle'],
             githubUrl: 'https://github.com/mikaelvivier',
             demoUrl: 'https://demo.com',
@@ -49,7 +49,7 @@ const Projects = () => {
         {
             title: t('projects.items.gacha.title'),
             description: t('projects.items.gacha.description'),
-            image: '../../images/projet_ahcag.png',
+            image: '/images/projet_ahcag.png',
             tags: ['Spring Boot', 'Microservices', 'PostgreSQL', 'Docker', 'React'],
             githubUrl: 'https://github.com/mikaelvivier',
             demoUrl: 'https://demo.com',
@@ -57,7 +57,7 @@ const Projects = () => {
         {
             title: t('projects.items.rental.title'),
             description: t('projects.items.rental.description'),
-            image: '../../images/bfb_loc.png',
+            image: '/images/bfb_loc.png',
             tags: ['Java', 'Swing', 'MySQL', 'MVC', 'Design Patterns'],
             githubUrl: 'https://github.com/mikaelvivier',
             demoUrl: 'https://demo.com',
