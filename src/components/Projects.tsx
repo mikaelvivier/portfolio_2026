@@ -17,7 +17,7 @@ const Projects = () => {
         {
             title: t('projects.items.cicd.title'),
             description: t('projects.items.cicd.description'),
-            image: 'https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&q=80&w=1000',
+            image: '../../images/dashboard_CICD.jpg',
             tags: ['GitLab CI', 'Docker', 'Ansible', 'Linux', 'Spring Boot', 'Angular'],
             githubUrl: 'https://github.com/mikaelvivier',
             demoUrl: 'https://demo.com',
@@ -25,7 +25,7 @@ const Projects = () => {
         {
             title: t('projects.items.social.title'),
             description: t('projects.items.social.description'),
-            image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=1000',
+            image: '../../images/chti_face_bouc.png',
             tags: ['Flutter', 'Firebase', 'Dart', 'Mobile'],
             githubUrl: 'https://github.com/mikaelvivier',
             demoUrl: 'https://demo.com',
@@ -33,7 +33,7 @@ const Projects = () => {
         {
             title: t('projects.items.aws.title'),
             description: t('projects.items.aws.description'),
-            image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1000',
+            image: '../../images/aws.png',
             tags: ['AWS Lambda', 'API Gateway', 'DynamoDB', 'S3', 'React'],
             githubUrl: 'https://github.com/mikaelvivier',
             demoUrl: 'https://demo.com',
@@ -41,7 +41,7 @@ const Projects = () => {
         {
             title: t('projects.items.blockchain.title'),
             description: t('projects.items.blockchain.description'),
-            image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=1000',
+            image: '../../images/electionchain.png',
             tags: ['Solidity', 'Ethereum', 'Web3.js', 'React', 'Truffle'],
             githubUrl: 'https://github.com/mikaelvivier',
             demoUrl: 'https://demo.com',
@@ -49,7 +49,7 @@ const Projects = () => {
         {
             title: t('projects.items.gacha.title'),
             description: t('projects.items.gacha.description'),
-            image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=1000',
+            image: '../../images/projet_ahcag.png',
             tags: ['Spring Boot', 'Microservices', 'PostgreSQL', 'Docker', 'React'],
             githubUrl: 'https://github.com/mikaelvivier',
             demoUrl: 'https://demo.com',
@@ -57,7 +57,7 @@ const Projects = () => {
         {
             title: t('projects.items.rental.title'),
             description: t('projects.items.rental.description'),
-            image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=1000',
+            image: '../../images/bfb_loc.png',
             tags: ['Java', 'Swing', 'MySQL', 'MVC', 'Design Patterns'],
             githubUrl: 'https://github.com/mikaelvivier',
             demoUrl: 'https://demo.com',
@@ -82,12 +82,12 @@ const Projects = () => {
                             key={index}
                             className="glass-effect rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 group"
                         >
-                            <div className="relative h-48 overflow-hidden">
+                            <div className="relative h-64 overflow-hidden">
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
                                 <img
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                                    className="w-full h-full object-cover object-center transform group-hover:scale-110 transition-transform duration-500"
                                 />
                             </div>
                             <div className="p-6">
