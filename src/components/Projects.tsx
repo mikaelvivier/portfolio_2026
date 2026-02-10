@@ -7,7 +7,7 @@ interface Project {
     description: string
     tags: string[]
     image: string
-    demoUrl: string
+    demoUrl?: string
     githubUrl: string
 }
 
@@ -53,7 +53,6 @@ const Projects = () => {
             image: '/images/dashboard_CICD.jpg',
             tags: ['GitLab CI', 'Docker', 'Ansible', 'Linux', 'Spring Boot', 'Angular'],
             githubUrl: 'https://github.com/mikaelvivier',
-            demoUrl: 'https://demo.com',
         },
         {
             title: t('projects.items.social.title'),
@@ -61,7 +60,6 @@ const Projects = () => {
             image: '/images/chti_face_bouc.png',
             tags: ['Flutter', 'Firebase', 'Dart', 'Mobile'],
             githubUrl: 'https://github.com/mikaelvivier',
-            demoUrl: 'https://demo.com',
         },
         {
             title: t('projects.items.aws.title'),
@@ -69,7 +67,6 @@ const Projects = () => {
             image: '/images/aws.png',
             tags: ['AWS Lambda', 'API Gateway', 'DynamoDB', 'S3', 'React'],
             githubUrl: 'https://github.com/mikaelvivier',
-            demoUrl: 'https://demo.com',
         },
         {
             title: t('projects.items.blockchain.title'),
@@ -77,7 +74,6 @@ const Projects = () => {
             image: '/images/electionchain.png',
             tags: ['Solidity', 'Ethereum', 'Web3.js', 'React', 'Truffle'],
             githubUrl: 'https://github.com/mikaelvivier',
-            demoUrl: 'https://demo.com',
         },
         {
             title: t('projects.items.gacha.title'),
@@ -85,7 +81,6 @@ const Projects = () => {
             image: '/images/projet_ahcag.png',
             tags: ['Spring Boot', 'Microservices', 'PostgreSQL', 'Docker', 'React'],
             githubUrl: 'https://github.com/mikaelvivier',
-            demoUrl: 'https://demo.com',
         },
         {
             title: t('projects.items.rental.title'),
@@ -93,7 +88,6 @@ const Projects = () => {
             image: '/images/bfb_loc.png',
             tags: ['Java', 'MySQL', 'MVC', 'Design Patterns', 'Swagger'],
             githubUrl: 'https://github.com/mikaelvivier',
-            demoUrl: 'https://demo.com',
         },
     ]
 
@@ -155,15 +149,17 @@ const Projects = () => {
                                         <Github size={18} />
                                         <span>{t('projects.code')}</span>
                                     </a>
-                                    <a
-                                        href={project.demoUrl}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex items-center gap-2 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors uppercase text-sm tracking-widest font-bold"
-                                    >
-                                        <ExternalLink size={18} />
-                                        <span>{t('projects.demo')}</span>
-                                    </a>
+                                    {project.demoUrl && (
+                                        <a
+                                            href={project.demoUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center gap-2 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors uppercase text-sm tracking-widest font-bold"
+                                        >
+                                            <ExternalLink size={18} />
+                                            <span>{t('projects.demo')}</span>
+                                        </a>
+                                    )}
                                 </div>
                             </div>
                         </div>
