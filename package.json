@@ -9,9 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@studio-freight/react-lenis": "^0.0.47",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.34.0",
     "lucide-react": "^0.344.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "simplex-noise": "^4.0.3",
+    "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
     "@types/node": "^25.2.3",

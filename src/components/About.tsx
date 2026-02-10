@@ -38,30 +38,30 @@ const About = () => {
     ]
 
     return (
-        <section id="about" className="py-20 px-6">
-            <div className="container mx-auto">
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                        <span className="text-gradient">{t('about.title')}</span>
+        <section id="about" className="relative text-gray-900 dark:text-white overflow-hidden bg-transparent">
+            <div className="container mx-auto px-6 py-20 relative z-10">
+                <div className="text-center mb-24">
+                    <h2 className="ciridae-section-title">
+                        {t('about.title')}
                     </h2>
-                    <p className="text-gray-600 dark:text-gray-300 text-lg max-w-3xl mx-auto">
+                    <p className="ciridae-description">
                         {t('about.description')}
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
                     {interests.map((interest, index) => (
                         <div
                             key={index}
-                            className="glass-effect p-6 rounded-xl hover:transform hover:scale-105 transition-all duration-300"
+                            className="glass-effect p-8 rounded-none hover:transform hover:-translate-y-2 transition-all duration-300 bg-white/40 dark:bg-black/40 border border-gray-200 dark:border-white/5 hover:border-gray-400 dark:hover:border-white/20 group"
                         >
-                            <div className={`${interest.color} mb-4`}>
-                                <interest.icon size={40} />
+                            <div className={`${interest.color} mb-6 transform group-hover:scale-110 transition-transform duration-300`}>
+                                <interest.icon size={48} strokeWidth={1.5} />
                             </div>
-                            <h3 className="text-xl font-bold mb-2 text-gray-800 dark:text-white">
+                            <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white uppercase tracking-wider">
                                 {interest.title}
                             </h3>
-                            <p className="text-gray-600 dark:text-gray-300">
+                            <p className="text-gray-600 dark:text-gray-400 font-light leading-relaxed">
                                 {interest.description}
                             </p>
                         </div>

@@ -10,8 +10,8 @@ const Header = ({ scrolled }: { scrolled: boolean }) => {
 
     const navItems = [
         { label: t('header.home'), href: '#hero' },
-        { label: t('header.about'), href: '#about' },
         { label: t('header.projects'), href: '#projects' },
+        { label: t('header.about'), href: '#about' },
         { label: t('header.contact'), href: '#contact' },
     ]
 
@@ -35,14 +35,15 @@ const Header = ({ scrolled }: { scrolled: boolean }) => {
                     </a>
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex items-center space-x-8">
+                    <nav className="hidden md:flex items-center space-x-12">
                         {navItems.map((item) => (
                             <a
                                 key={item.label}
                                 href={item.href}
-                                className="text-gray-600 dark:text-gray-300 hover:text-purple-500 dark:hover:text-purple-400 transition-colors font-medium"
+                                className="text-sm uppercase tracking-widest text-gray-400 hover:text-white transition-colors duration-300 font-medium relative group"
                             >
                                 {item.label}
+                                <span className="absolute -bottom-2 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
                             </a>
                         ))}
                         <div className="flex items-center gap-4 border-l border-gray-200 dark:border-gray-700 pl-4">

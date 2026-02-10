@@ -24,64 +24,65 @@ const Hero = () => {
     }, [fullText])
 
     return (
-        <section
-            id="hero"
-            className="min-h-screen flex items-center justify-center relative px-6"
-        >
-            <div className="container mx-auto text-center animate-fade-in">
-                {/* Profile Photo */}
-                <div className="mb-8 flex justify-center">
-                    <div className="relative">
-                        <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full blur-lg opacity-50"></div>
-                        <img
-                            src="/images/photo_Mikael.png"
-                            alt="Mikaël Vivier"
-                            className="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-gray-800 shadow-2xl"
-                        />
+        <section id="hero" className="relative h-screen w-full overflow-hidden">
+            <div className="container mx-auto px-6 h-full flex flex-col items-center justify-center relative z-20 pt-24 md:pt-32">
+                <div className="text-center animate-fade-in w-full max-w-4xl mx-auto">
+
+                    {/* Profile Photo */}
+                    <div className="mb-8 flex justify-center">
+                        <div className="relative group">
+                            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+                            <img
+                                src="/images/photo_Mikael.png"
+                                alt="Mikaël Vivier"
+                                className="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-gray-800 shadow-2xl transform transition-transform duration-300 group-hover:scale-105"
+                            />
+                        </div>
+                    </div>
+
+                    <div className="mb-8 space-y-4">
+                        <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-none text-gray-900 dark:text-white mb-6">
+                            {t('hero.greeting')}{' '}
+                            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400">
+                                Mikaël Vivier
+                            </span>
+                        </h1>
+                        <div className="h-12 md:h-16 flex items-center justify-center">
+                            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 font-light uppercase tracking-widest">
+                                {displayedText}
+                                <span className="animate-pulse text-purple-600 dark:text-purple-400">|</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <p className="ciridae-description mb-16 animate-slide-up">
+                        {t('hero.description')}
+                    </p>
+
+                    <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-slide-up mb-8">
+                        <a
+                            href="#projects"
+                            className="px-10 py-4 bg-gray-900 text-white dark:bg-white dark:text-black rounded-none font-bold uppercase tracking-widest hover:bg-gray-700 dark:hover:bg-gray-200 transition-all duration-300 transform hover:-translate-y-1"
+                        >
+                            {t('hero.viewProjects')}
+                        </a>
+                        <a
+                            href="#contact"
+                            className="px-10 py-4 bg-transparent border border-gray-900 text-gray-900 dark:border-white dark:text-white rounded-none font-bold uppercase tracking-widest hover:bg-gray-900 hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-300"
+                        >
+                            {t('hero.contactMe')}
+                        </a>
                     </div>
                 </div>
 
-                <div className="mb-6">
-                    <h1 className="text-5xl md:text-7xl font-bold mb-4">
-                        {t('hero.greeting')}{' '}
-                        <span className="text-gradient">Mikaël Vivier</span>
-                    </h1>
-                    <div className="h-12 md:h-16">
-                        <p className="text-2xl md:text-4xl text-gray-600 dark:text-gray-300">
-                            {displayedText}
-                            <span className="animate-pulse">|</span>
-                        </p>
-                    </div>
-                </div>
-
-                <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-12 animate-slide-up">
-                    {t('hero.description')}
-                </p>
-
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
-                    <a
-                        href="#projects"
-                        className="px-8 py-3 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white rounded-lg font-semibold hover:opacity-90 transition-opacity duration-200"
-                    >
-                        {t('hero.viewProjects')}
-                    </a>
-                    <a
-                        href="#contact"
-                        className="px-8 py-3 glass-effect text-gray-800 dark:text-white rounded-lg font-semibold hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
-                    >
-                        {t('hero.contactMe')}
-                    </a>
-                </div>
+                <a
+                    href="#projects"
+                    className="animate-float p-2 text-gray-900 dark:text-gray-400 hover:text-purple-600 dark:hover:text-white transition-colors"
+                    aria-label="Scroll to projects"
+                >
+                    <ChevronDown size={32} />
+                </a>
             </div>
-
-            {/* Scroll Indicator */}
-            <a
-                href="#projects"
-                className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float"
-                aria-label="Scroll to projects"
-            >
-                <ChevronDown size={32} className="text-gray-600 dark:text-gray-400" />
-            </a>
         </section>
     )
 }

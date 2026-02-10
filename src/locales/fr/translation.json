@@ -8,7 +8,7 @@
     "hero": {
         "greeting": "Bonjour, je suis",
         "role": "Développeur Full-Stack",
-        "description": "Passionné par le développement logiciel, j'explore différentes technologies à travers mes projets : DevOps, Cloud, Blockchain et développement mobile.",
+        "description": "Passionné par le développement logiciel, j'explore différentes technologies à travers mes projets : DevOps, Cloud, Blockchain, développement web et mobile.",
         "viewProjects": "Voir mes projets",
         "contactMe": "Me contacter"
     },
@@ -40,7 +40,7 @@
     },
     "projects": {
         "title": "Mes Projets",
-        "description": "Une sélection de mes réalisations récentes, alliant design moderne et technologies de pointe.",
+        "description": "Une sélection de mes réalisations récentes, illustrant ma polyvalence technique : de la conception d'applications java, mobiles et web au déploiement d'infrastructures Cloud et DevOps.",
         "demo": "Demo",
         "code": "Code",
         "items": {

@@ -40,7 +40,7 @@
     },
     "projects": {
         "title": "My Projects",
-        "description": "A selection of my recent works, combining modern design and cutting-edge technologies.",
+        "description": "A selection of my recent works, demonstrating my technical versatility: from designing Java, mobile, and web applications to deploying Cloud and DevOps infrastructures.",
         "demo": "Demo",
         "code": "Code",
         "items": {

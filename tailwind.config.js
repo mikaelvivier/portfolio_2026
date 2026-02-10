@@ -16,12 +16,15 @@ export default {
                     muted: '#a3a3a3',
                 }
             },
-            animation: {
-                'fade-in': 'fadeIn 0.8s ease-in-out',
-                'slide-up': 'slideUp 0.6s ease-out',
-                'float': 'float 3s ease-in-out infinite',
-            },
             keyframes: {
+                meteor: {
+                    "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+                    "70%": { opacity: "1" },
+                    "100%": {
+                        transform: "rotate(215deg) translateX(-500px)",
+                        opacity: "0",
+                    },
+                },
                 fadeIn: {
                     '0%': { opacity: '0' },
                     '100%': { opacity: '1' },
@@ -34,6 +37,21 @@ export default {
                     '0%, 100%': { transform: 'translateY(0px)' },
                     '50%': { transform: 'translateY(-10px)' },
                 },
+                aurora: {
+                    from: {
+                        backgroundPosition: "50% 50%, 50% 50%",
+                    },
+                    to: {
+                        backgroundPosition: "350% 50%, 350% 50%",
+                    },
+                },
+            },
+            animation: {
+                'fade-in': 'fadeIn 0.8s ease-in-out',
+                'slide-up': 'slideUp 0.6s ease-out',
+                'float': 'float 3s ease-in-out infinite',
+                aurora: "aurora 60s linear infinite",
+                "meteor-effect": "meteor 5s linear infinite",
             },
         },
     },
