@@ -1,0 +1,91 @@
+{
+    "header": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "greeting": "Hola, soy",
+        "role": "Desarrollador Full-Stack",
+        "description": "Apasionado por el desarrollo de software, exploro diferentes tecnologías a través de mis proyectos: DevOps, Nube, Blockchain y desarrollo móvil.",
+        "viewProjects": "Ver mis proyectos",
+        "contactMe": "Contactarme"
+    },
+    "about": {
+        "title": "Sobre Mí",
+        "description": "Estudiante de Informática y Redes en IMT Nord Europe, también soy aprendiz de ingeniero Full-Stack en Worldline Seclin. Más allá del código, cultivo varias pasiones.",
+        "interests": {
+            "tech": {
+                "title": "Noticias Tech & Finanzas",
+                "description": "Me apasionan los últimos avances tecnológicos y las tendencias del mercado financiero."
+            },
+            "reading": {
+                "title": "Lectura",
+                "description": "Disfruto leyendo todo tipo de géneros, desde ciencia hasta fantasía."
+            },
+            "chess": {
+                "title": "Ajedrez",
+                "description": "Jugador de ajedrez aficionado, me gusta comenzar con una apertura de Gambito de Dama."
+            },
+            "travel": {
+                "title": "Viajes",
+                "description": "Descubrir nuevas culturas y hacer senderismo me permite liberar mi mente."
+            },
+            "sports": {
+                "title": "Deportes",
+                "description": "El levantamiento de pesas y el boxeo me ayudan a mantener un equilibrio físico y mental."
+            }
+        }
+    },
+    "projects": {
+        "title": "Mis Proyectos",
+        "description": "Una selección de mis trabajos recientes, combinando diseño moderno y tecnologías de vanguardia.",
+        "demo": "Demo",
+        "code": "Código",
+        "items": {
+            "cicd": {
+                "title": "Pipeline CI/CD",
+                "description": "Infraestructura DevOps completa que automatiza el ciclo de vida de la aplicación desde el commit hasta el servidor de producción Linux."
+            },
+            "social": {
+                "title": "Cht'i Face Bouc",
+                "description": "Aplicación móvil de red social similar a Twitter."
+            },
+            "aws": {
+                "title": "App Serverless AWS",
+                "description": "Aplicación web serverless alojada en AWS utilizando solo servicios PaaS/SaaS."
+            },
+            "blockchain": {
+                "title": "Elect-on-Chain",
+                "description": "Aplicación de votación descentralizada (dApp) en blockchain Ethereum con gestión de sesiones y sistema de propuestas."
+            },
+            "gacha": {
+                "title": "Proyecto Gacha",
+                "description": "Sistema de juego gacha basado en arquitectura de microservicios con Spring Boot."
+            },
+            "rental": {
+                "title": "BFB Rental",
+                "description": "Aplicación de gestión de alquiler de vehículos con arquitectura en capas y patrones de diseño."
+            }
+        }
+    },
+    "contact": {
+        "title": "Impulsa tus Ideas",
+        "description": "¿Una pregunta, un proyecto o simplemente quieres charlar? ¡No dudes en contactarme!",
+        "name": "Nombre",
+        "namePlaceholder": "Tu nombre",
+        "email": "Correo",
+        "emailPlaceholder": "tu.correo@ejemplo.com",
+        "message": "Mensaje",
+        "messagePlaceholder": "Tu mensaje...",
+        "send": "Enviar mensaje",
+        "sending": "Enviando...",
+        "success": "¡Mensaje enviado con éxito! Responderé pronto.",
+        "error": "Ocurrió un error. Por favor intenta de nuevo."
+    },
+    "footer": {
+        "copyright": "Hecho con",
+        "and": "y"
+    }
+}

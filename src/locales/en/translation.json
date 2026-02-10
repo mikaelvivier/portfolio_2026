@@ -1,0 +1,91 @@
+{
+    "header": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "hero": {
+        "greeting": "Hello, I am",
+        "role": "Full-Stack Developer",
+        "description": "Passionate about software development, I explore various technologies through my projects: DevOps, Cloud, Blockchain, and mobile development.",
+        "viewProjects": "View my projects",
+        "contactMe": "Contact me"
+    },
+    "about": {
+        "title": "About Me",
+        "description": "Student in Computer Science and Networks at IMT Nord Europe, I am also an apprentice Full-Stack Engineer at Worldline Seclin. Beyond coding, I cultivate various passions.",
+        "interests": {
+            "tech": {
+                "title": "Tech & Finance News",
+                "description": "I am passionate about the latest technological advancements and financial market trends."
+            },
+            "reading": {
+                "title": "Reading",
+                "description": "I enjoy reading all genres, from science to fantasy."
+            },
+            "chess": {
+                "title": "Chess",
+                "description": "An amateur chess player, I like starting with a Queen's Gambit opening."
+            },
+            "travel": {
+                "title": "Travel",
+                "description": "Discovering new cultures and hiking allows me to free my mind."
+            },
+            "sports": {
+                "title": "Sports",
+                "description": "Weightlifting and boxing help me maintain a physical and mental balance."
+            }
+        }
+    },
+    "projects": {
+        "title": "My Projects",
+        "description": "A selection of my recent works, combining modern design and cutting-edge technologies.",
+        "demo": "Demo",
+        "code": "Code",
+        "items": {
+            "cicd": {
+                "title": "CI/CD Pipeline",
+                "description": "Complete DevOps infrastructure automating application lifecycle from commit to Linux production server."
+            },
+            "social": {
+                "title": "Cht'i Face Bouc",
+                "description": "Mobile social network application similar to Twitter."
+            },
+            "aws": {
+                "title": "AWS Serverless App",
+                "description": "Serverless Web Application hosted on AWS using only PaaS/SaaS services."
+            },
+            "blockchain": {
+                "title": "Elect-on-Chain",
+                "description": "Decentralized voting application (dApp) on Ethereum blockchain with voting sessions and proposal system."
+            },
+            "gacha": {
+                "title": "Gacha Project",
+                "description": "Gacha game system based on microservices architecture with Spring Boot."
+            },
+            "rental": {
+                "title": "BFB Rental",
+                "description": "Vehicle rental management application with layered architecture and design patterns."
+            }
+        }
+    },
+    "contact": {
+        "title": "Propel Your Ideas",
+        "description": "A question, a project, or just want to chat? Feel free to contact me!",
+        "name": "Name",
+        "namePlaceholder": "Your name",
+        "email": "Email",
+        "emailPlaceholder": "your.email@example.com",
+        "message": "Message",
+        "messagePlaceholder": "Your message...",
+        "send": "Send message",
+        "sending": "Sending...",
+        "success": "Message sent successfully! I will reply soon.",
+        "error": "An error occurred. Please try again."
+    },
+    "footer": {
+        "copyright": "Made with",
+        "and": "and"
+    }
+}
