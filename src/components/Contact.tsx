@@ -17,12 +17,6 @@ const Contact = () => {
         setStatus('submitting')
 
         try {
-            await new Promise(resolve => setTimeout(resolve, 1000))
-            setStatus('success')
-            setFormState({ name: '', email: '', message: '' })
-            setTimeout(() => setStatus('idle'), 5000)
-
-            /* Uncomment this when you have your Formspree ID:
             const response = await fetch('https://formspree.io/f/mzdadbdk', {
                 method: 'POST',
                 headers: {
@@ -39,7 +33,6 @@ const Contact = () => {
                 setStatus('error')
                 setTimeout(() => setStatus('idle'), 5000)
             }
-            */
         } catch (error) {
             setStatus('error')
             setTimeout(() => setStatus('idle'), 5000)
